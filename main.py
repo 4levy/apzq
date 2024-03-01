@@ -56,12 +56,6 @@ BUTTON_NAME = "ยืนยันตัวตน"
 # EMBED IMAGE
 Images = ""
 
-# Key Config
-webhook_role = ""
-phone = ""
-roleid =  0
-key_price = 0 #ราคาคีย์
-
 # ช่องที่ต้องการให้บอร์ดเขา | English : Join Vc config
 Guild_ID = 1067449953376534569  # if vc error go to line 625, and change Guild_ID to your server id, and Vc_ID to vc channel id
 Vc_ID = 1067449954014072965
