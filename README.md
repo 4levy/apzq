@@ -1,5 +1,3 @@
-# ทำไมเป็น DMs ผมมาได้ครับ ชื่อalow_z ID 1181316153478479883
-
 # **_COMMAND [คำสั่งทั้งหมด]_**
 
 
@@ -16,3 +14,6 @@
 - .webhook_setup [ADMIN] 
 - .redeem [OWNER] 
 - .attack_setup [Admin]
+
+
+# ทำไมเป็น DMs ผมมาได้ครับ ชื่อ alow_z ID 1181316153478479883
