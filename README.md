@@ -3,7 +3,7 @@
 - CREATE DATA FOLDER
 - PYTHON
 
-# **_COMMAND [คำสั่งทั้งหมด]_**
+# **_[คำสั่งทั้งหมด]_**
 
 
 **_User Commands_** 
