@@ -1,5 +1,10 @@
 # Before using this bot please create *data* and *key* folder na kubb❤️
 
+# Required
+- CREATE KEY FOLDER
+- CREATE DATA FOLDER
+- PYTHON
+
 # **_COMMAND [คำสั่งทั้งหมด]_**
 
 
