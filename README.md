@@ -1,13 +1,13 @@
 # **_COMMAND [คำสั่งทั้งหมด]_**
 
 
-**_User Command_** 
+**_User Commands_** 
 - .help 
 - .sms คำสั่งยิงเบอร์ : .sms (เบอร์) (เวลา1- 2นาที) 
 - .uptime 
 - .check_time 
 
-**_Owner & Admin Command_** 
+**_Owner & Admin Commands_** 
 - .nsfw_setup [OWNER ONLY] 
 - .verify_setup [OWNER ONLY] 
 - .saverole_setup [OWNER ONLY] 
