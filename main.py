@@ -1,4 +1,4 @@
-# ทำไมเป็น DMผมมาได้ครับ ชื่อalow_z UID 1181316153478479883
+# ทำไมเป็น DM ผมมาได้ครับ ชื่อ alow_z ID 1181316153478479883
 
 # Modules importation
 import nextcord
