@@ -1,3 +1,5 @@
+# Before using this bot please create **data** and **key** folder na kubb❤️
+
 # **_COMMAND [คำสั่งทั้งหมด]_**
 
 
