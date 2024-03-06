@@ -1,7 +1,7 @@
 # Required
 - CREATE Key FOLDER
 - CREATE Data FOLDER
-- PYTHON
+- PYTHON V.3.8.10
 - Make sure the name of folder is correct.
 
 # **_[คำสั่งทั้งหมด]_**
