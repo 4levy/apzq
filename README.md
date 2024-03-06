@@ -21,5 +21,5 @@
 - .redeem [OWNER] 
 - .attack_setup [Admin]
 
-[Discord Contact]
+[Discord Contact] \n
 ทำไมเป็น DMs ผมมาได้ครับ ชื่อ alow_z ID 1181316153478479883
