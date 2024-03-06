@@ -16,6 +16,8 @@ from requests import post, Session
 from datetime import datetime, timedelta
 from nextcord import Activity, ActivityType, Status
 import itertools
+import datetime as date
+import os
 from concurrent.futures import ThreadPoolExecutor
 from string import ascii_uppercase, digits
 from random import choice
@@ -38,15 +40,17 @@ COMMAND_UPTIME = 'uptime'
 COMMAND_REDEEM = 'redeem'
 COMMAND_CHECK = 'check_time'
 COMMAND_ATTACK = 'attack_setup'
+COMMAND_SCRIPT = 'script_setup'
 
-# เซฟยศ config
-owner_id = ""    
+# เซฟยศ config    
 name = "alow_z" #ชื่อของแอดมิน | English : ur discord username
 log_channel_id = 0 #ช่องเซฟยศ log | English : log save role channel
+token = "" #บอทโทเคน | English : bot token 
+owner_id = "" # DISCORD ID
 
 # SMS SPAM config
 PREFIX = '.' 
-LIMIT = 2 # จำนวน 
+LIMIT = 5 # จำนวน 
 blacklist = ['191,11,00'] # เบอร์ที่ต้องการจะไม่ให้ยิง
 
 # Verify config
@@ -56,6 +60,7 @@ BUTTON_NAME = "ยืนยันตัวตน"
 
 # EMBED IMAGE
 Images = ""
+COLOR = 0xf1ebeb
 
 # ช่องที่ต้องการให้บอทเขา | English : Join Vc config
 Guild_ID = 1067449953376534569  # if vc error go to line 625, and change Guild_ID to your server id, and Vc_ID to vc channel id
@@ -65,7 +70,7 @@ Vc_ID = 1067449954014072965
 channel_id = 0 
 
 # Webhook Spam
-cooldown = '10'  
+cooldown = '10' 
 
 # Config Status
 Name_status = "พร้อมใช้งาน 💚"
@@ -131,7 +136,7 @@ message_data = {
 }
 url = f"https://discord.com/api/v10/channels/{channel_id}/messages"
 headers = {
-    "Authorization": f"Bot {os.environ['token']}",
+    "Authorization": f"Bot {token}",
     "Content-Type": "application/json"
 }
 
@@ -454,7 +459,7 @@ def startall(phone, amount):
 @bot.command()
 async def help(ctx):
     await ctx.send(f"<a:success:1192084671060791308> | BOT STATUS ONLINE\n__**แจ้งเตือน**__ : ข้อความจะถูกลบภายใน15วิ",delete_after=15)
-    await ctx.send(f"```Command \n {PREFIX}help \n {PREFIX}sms คำสั่งยิงเบอร์ : {PREFIX}sms (เบอร์) (เวลา1- {str(LIMIT)}นาที) \n {PREFIX}{COMMAND_UPTIME} \n {PREFIX}{COMMAND_CHECK} ```\n __**OWNER COMMAND**__ \n ``` {PREFIX}{COMMAND_NSFW} [OWNER ONLY] \n {PREFIX}{COMMAND_VERIFY} [OWNER ONLY] \n {PREFIX}{COMMAND_SAVROLE} [OWNER ONLY] \n {PREFIX}{COMMAND_WEBHOOK} [ADMIN] \n {PREFIX}{COMMAND_REDEEM} [OWNER] \n {PREFIX}{COMMAND_ATTACK} [OWNER]```",delete_after=15)
+    await ctx.send(f"```Command \n {PREFIX}help \n {PREFIX}sms คำสั่งยิงเบอร์ : {PREFIX}sms (เบอร์) (เวลา1- {str(LIMIT)}นาที) \n {PREFIX}{COMMAND_UPTIME} \n {PREFIX}{COMMAND_CHECK} ```\n __**OWNER COMMAND**__ \n ``` {PREFIX}{COMMAND_NSFW} [OWNER ONLY] \n {PREFIX}{COMMAND_VERIFY} [OWNER ONLY] \n {PREFIX}{COMMAND_SAVROLE} [OWNER ONLY] \n {PREFIX}{COMMAND_WEBHOOK} [ADMIN] \n {PREFIX}{COMMAND_REDEEM} [OWNER] \n {PREFIX}{COMMAND_ATTACK} [OWNER] \n {PREFIX}{COMMAND_SCRIPT}```",delete_after=15)
     await ctx.message.delete()
 
 @bot.command()
@@ -863,7 +868,6 @@ async def webhook_setup(ctx):
     else:
         await ctx.reply('มึงไม่มีสิทธิ์ใช้ครับไอ้โง่')
 
-
 @bot.command()
 async def verify_setup(ctx):
     if ctx.author.guild_permissions.administrator:
@@ -922,8 +926,39 @@ async def nsfw_setup(interaction: nextcord.Interaction):
         embed.set_image(url=Images)
         await interaction.send(embed=embed, view=NSFW())
 
-import datetime as dt
-import os
+class script(nextcord.ui.View):
+    def __init__(self):
+        super().__init__(timeout=None)
+    
+    @nextcord.ui.button(
+        emoji='<:dawdas:1202987022994776145>',
+        label='Get Script',
+        style= nextcord.ButtonStyle.blurple
+    )
+    async def send(self, button: nextcord.Button, interaction: nextcord.Interaction):
+        embed = Embed(title="**__SCRIPT__**",
+                      description="# COMING SOON",
+                      color=COLOR)
+        embed.set_image(url=Images)
+        await interaction.send(embed=embed, ephemeral=True)
+
+    @nextcord.ui.button(label="Mobile Executors", style=ButtonStyle.blurple, emoji="<a:i7:1210538764905087046>")
+    async def usage(self, button: nextcord.Button, interaction: Interaction):
+        instructions = "**Arceus X Neo 1.2.6**\n [Click here to download](https://modsfire.com/hxAKeABcKTc675A)\n\n**iOS Arceus X NEO 1.0.7**\n[Click here to download](https://www.mediafire.com/file/7831s4btzuz1hoy/Arceus_X_NEO_iOS_2.612.ipa/file)\n---\n**Fluxus 2.6.1.0** [64Bit]\n[Click here to download](https://modsfire.com/7N1jpv152A514O6)\n\n**Fluxus 2.6.1.0** [32Bit]\n[Click here to download](https://modsfire.com/d34otM0u9LxYNL0)\n\n**FluxusKeyless by PunkTeam** [64bit]\n[Click here to download](https://www.mediafire.com/file/9oef6nmbq6fw6pd/%255BPUNK_TEAM%255DFluxusKeyless%255B64bit%255D.apk/file)\n\n**FluxusKeyless by PunkTeam** [32bit]\n[Click here to download](https://www.mediafire.com/file/l1hiovj59snvpvm/%255BPUNK_TEAM%255DFluxusKeyless%255B32bit%255D.apk/file)\n---\n**Hydrogen 2.6.1.0**\n[Click here to download](https://modsfire.com/FbGMe642VT7hm5B)\n\n # ADDING COMING SOON"
+        embed = Embed(title="**__Executors__**", description=instructions, color=COLOR)
+        embed.set_image(url=Images)
+        await interaction.send(embed=embed, ephemeral=True)
+
+@bot.command(pass_context = True)   
+async def script_setup(interaction: nextcord.Interaction):
+    await interaction.message.delete()
+    if interaction.author.name == name:
+        embed = nextcord.Embed(
+            title='**__Get script by press a button below__**',
+            color=COLOR
+        )
+        embed.set_image(url=Images)
+        await interaction.send(embed=embed, view=script())
 
 @bot.event
 async def on_ready():
@@ -931,9 +966,9 @@ async def on_ready():
     vc = nextcord.utils.get(bot.get_guild(Guild_ID).channels, id=Vc_ID)
     await vc.guild.change_voice_state(channel=vc, self_mute=False, self_deaf=True)
     global start_time
-    start_time = dt.datetime.now()
+    start_time = date.datetime.now()
     clear_console()
-    print(f"{TerminalColors.HEADER}Bot is ready: {bot.user.name}")
+    print(f"{TerminalColors.HEADER}Bot is ready: {bot.user.name} by 4levy{TerminalColors.ENDC}")
     print(f"{TerminalColors.OKBLUE}Connected to {len(bot.guilds)} servers:{TerminalColors.ENDC}")
     for guild in bot.guilds:
         print(f"{TerminalColors.OKGREEN}- {guild.name} {TerminalColors.WARNING}(ID: {guild.id}){TerminalColors.ENDC}")
@@ -945,13 +980,16 @@ async def on_ready():
 
 async def change_presence():
     activities = [
-        Activity(type=ActivityType.streaming, name=Name_status,url=Twitch_url),
+        Activity(type=ActivityType.playing, name="พร้อมใช้งาน 💚"),
+        Activity(type=ActivityType.listening, name="Version 0.8"),
+        Activity(type=ActivityType.watching, name="ALL IN ONE"),
+        Activity(type=ActivityType.watching, name="Created by 4levy")
     ]
 
     statuses = [Status.online, Status.dnd, Status.idle]
 
     for status, activity in zip(itertools.cycle(statuses), itertools.cycle(activities)):
         await bot.change_presence(status=status, activity=activity)
-        await asyncio.sleep(1)
+        await asyncio.sleep(5)
 
-bot.run(os.environ['token'])
+bot.run(token)
