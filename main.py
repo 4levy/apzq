@@ -40,7 +40,7 @@ COMMAND_CHECK = 'check_time'
 COMMAND_ATTACK = 'attack_setup'
 
 # เซฟยศ config
-owner_id = "874898422233178142"    
+owner_id = ""    
 name = "alow_z" #ชื่อของแอดมิน | English : ur discord username
 log_channel_id = 0 #ช่องเซฟยศ log | English : log save role channel
 
