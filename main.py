@@ -39,7 +39,8 @@ COMMAND_REDEEM = 'redeem'
 COMMAND_CHECK = 'check_time'
 COMMAND_ATTACK = 'attack_setup'
 
-# เซฟยศ config    
+# เซฟยศ config
+owner_id = "874898422233178142"    
 name = "alow_z" #ชื่อของแอดมิน | English : ur discord username
 log_channel_id = 0 #ช่องเซฟยศ log | English : log save role channel
 
@@ -519,7 +520,7 @@ class saverole(View):
     @nextcord.ui.button(label="เซฟยศ", style=ButtonStyle.primary, emoji="<a:1198633069742141623:1198633069742141623>")
     async def save(self, button: nextcord.Button, interaction: Interaction):
         user = interaction.user
-        if user.id in self.cooldowns and user.id != 874898422233178142:
+        if user.id in self.cooldowns and user.id != owner_id:
             time_remaining = self.cooldowns[user.id] - datetime.now()
             if time_remaining.total_seconds() > 0:
                 await interaction.response.send_message(f"> `รอ {int(time_remaining.total_seconds() // 3600)} ชั่วโมง {int((time_remaining.total_seconds() % 3600) // 60)} นาที เพื่อกดเซฟอีกครั้ง ` ❗", ephemeral=True)
