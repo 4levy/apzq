@@ -1,5 +1,5 @@
 # Install Command
-- pip install -r requirements.txt
+- ```pip install -r requirements.txt```
 
 # Required
 - CREATE Key FOLDER
