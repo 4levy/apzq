@@ -1,0 +1,6 @@
+nextcord
+pytz
+colorma
+requests
+discord
+user_agent
