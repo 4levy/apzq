@@ -2,8 +2,8 @@
 - ```pip install -r requirements.txt```
 
 # Required
-- CREATE Key FOLDER
-- CREATE Data FOLDER
+- CREATE ```Key``` FOLDER
+- CREATE ```Data``` FOLDER
 - PYTHON V.3.8.10
 - Make sure the name of folder is correct.
 
