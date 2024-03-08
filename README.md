@@ -1,3 +1,5 @@
+# ALL IN ONE
+
 # Install Command
 - ```pip install -r requirements.txt```
 
