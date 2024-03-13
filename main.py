@@ -1,5 +1,6 @@
 # ทำไมเป็น DM ผมมาได้ครับ ชื่อ alow_z ID 1181316153478479883
 # SCR IN discord.gg/aqt6thEVV7
+# Correctly version = V0.8
 
 # CONFIG HELP COMMAND
 COMMAND_NSFW = 'nsfw_setup'
