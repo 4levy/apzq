@@ -18,9 +18,6 @@
 - .uptime 
 - .check_time 
 
-**_Owner & Admin slash Command_** 
-- /setup
-
 **_Owner & Admin Commands_** 
 - .nsfw_setup [OWNER ONLY] 
 - .verify_setup [OWNER ONLY] 
@@ -29,6 +26,9 @@
 - .redeem [OWNER] 
 - .attack_setup [Admin]
 - .script_setup [OWNER]
+
+**_slash Command_**
+- /setup [OWNER]
 
 ![image](https://github.com/4levy/apzq/assets/100963276/19e400c5-c78b-4081-a7f5-073b8109f97f)
 
