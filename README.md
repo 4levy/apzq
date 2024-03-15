@@ -18,6 +18,9 @@
 - .uptime 
 - .check_time 
 
+** **_Owner & Admin slash Command_** 
+- /setup
+
 **_Owner & Admin Commands_** 
 - .nsfw_setup [OWNER ONLY] 
 - .verify_setup [OWNER ONLY] 
