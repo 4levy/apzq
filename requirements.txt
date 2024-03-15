@@ -1,6 +1,7 @@
 nextcord
-pytz
-colorma
-requests
+httpxpip
+colorama
 discord
+requests
+asyncio
 user_agent
