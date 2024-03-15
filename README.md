@@ -18,7 +18,7 @@
 - .uptime 
 - .check_time 
 
-** **_Owner & Admin slash Command_** 
+**_Owner & Admin slash Command_** 
 - /setup
 
 **_Owner & Admin Commands_** 
