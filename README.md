@@ -30,7 +30,9 @@
 **_slash Command_**
 - /setup [OWNER]
 
-![image](https://github.com/4levy/apzq/assets/100963276/19e400c5-c78b-4081-a7f5-073b8109f97f)
+![image](https://github.com/4levy/apzq/assets/100963276/4b5ed79a-ef1b-40da-b028-1a7baf43086e)
+
+)
 
 [Discord Contact]
  
