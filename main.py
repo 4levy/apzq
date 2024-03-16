@@ -1,4 +1,4 @@
-# ทำไมเป็น DM ผมมาได้ครับ ชื่อ alow_z ID 1181316153478479883
+# ทำไมเป็น DM ผมมาได้ครับ ชื่อ 4levy ID 874898422233178142
 # SCR IN discord.gg/jmmrQcwYP3 ask 4levy for full scr
 # Correctly version = V1.0
 
