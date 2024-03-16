@@ -1,7 +1,0 @@
-nextcord
-httpxpip
-colorama
-discord
-requests
-asyncio
-user_agent
