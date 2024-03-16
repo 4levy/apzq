@@ -21,11 +21,13 @@ COMMAND_CREDIT ='credit'
 COMMAND_CHECKIP = 'checkip'
 COMMAND_TRANSLATE = 'translate'
 
-# เซฟยศ config    
-name = "4levy" #ชื่อของแอดมิน | English : ur discord username
-log_channel_id = 0 #ช่องเซฟยศ log | English : log save role channel
+# Main
 token = "" #บอทโทเคน | English : bot token 
 OWNER_ID = [] # DISCORD ID
+name = "4levy" #ชื่อของแอดมิน | English : ur discord username
+
+# เซฟยศ config    
+log_channel_id = 0 #ช่องเซฟยศ log | English : log save role channel
 
 # SMS SPAM config
 PREFIX = '.' 
