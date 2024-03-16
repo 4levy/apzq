@@ -48,7 +48,7 @@ Vc_ID = 0
 # config แจ้งเตือนออนบอท
 channel_id = 0 
 
-# Webhook Spam
+# Webhook Control
 cooldown = '10' 
 
 # Setup buyer_role
