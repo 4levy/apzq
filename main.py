@@ -1,6 +1,6 @@
 # ทำไมเป็น DM ผมมาได้ครับ ชื่อ 4levy ID 874898422233178142
 # SCR IN discord.gg/jmmrQcwYP3 ask 4levy for full scr
-# Correctly version = V1.0
+# Correctly version = V1.0 lasted version on discord server
 
 # ---------------CONFIG---------------------------- #
 
