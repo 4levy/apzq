@@ -1,4 +1,4 @@
-# ALL IN ONE
+# NO MORE UPDATE IN GITHUB
 
 # Required
 - CREATE ```Key``` FOLDER
